@@ -1,0 +1,66 @@
+.case--study_container{
+  aside{
+
+    img{
+      max-width:100%;
+      margin-bottom:20px;
+      @media #{$tablet}{
+        width:30%;
+      }
+      @media #{$laptop}{
+        width:90%;
+      }
+    }
+  }
+  section{
+    .content{
+      top:90px;
+      width:90%;
+
+      &:not(.no-sticky){
+        @media only screen and (min-height:800px){
+          position: sticky;
+        }
+      }
+
+      *{
+        font-size:14px;
+        line-height:25px;
+      }
+
+      h1{
+        font-size:28px;
+        font-weight:$bold;
+        color:$blue;
+      }
+
+
+
+      .details{
+        border-top:1px solid #d2d2d2;
+        border-bottom: 1px solid #d2d2d2;
+        padding:10px;
+
+        h3{
+          width:20%;
+        }
+
+        h3, p{
+          margin:5px 0;
+        }
+
+        p{
+
+          *{
+            color:$black;
+          }
+          b{
+            font-weight:$bold;
+            display:inline-block;
+            margin-right:30px;
+          }
+        }
+      }
+    }
+  }
+}

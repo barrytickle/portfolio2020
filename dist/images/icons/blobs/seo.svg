@@ -1,0 +1,38 @@
+<svg id="blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.758 81.682">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f1ff;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #8251bc;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: square;
+      }
+    </style>
+  </defs>
+  <g id="Landing-Page-v1.0" transform="translate(-878 -1090)">
+    <g id="perks" transform="translate(-434 1088)">
+      <g id="_1" data-name="1" transform="translate(1312 2)">
+        <g id="icon-practicies">
+          <path id="Path-4" class="cls-1" d="M16.094,12.042,13.98,14.237A49.933,49.933,0,0,0,.094,51.953h0A29.976,29.976,0,0,0,22.737,79.192l.684.171a77.533,77.533,0,0,0,43.46-1.7l2.387-.8A28.564,28.564,0,0,0,88.2,44.178l-1.785-8.926A44.019,44.019,0,0,0,57.442,2.216L57.106,2.1A39.343,39.343,0,0,0,16.094,12.042Z"/>
+          <g id="goal-64" transform="translate(30 26)">
+            <path id="Shape" class="cls-2" d="M23.621,14A11.988,11.988,0,1,1,15,5.379"/>
+            <circle id="Oval" class="cls-3" cx="7" cy="7" r="7" transform="translate(5 10)"/>
+            <path id="Shape-2" data-name="Shape" class="cls-4" d="M12,17,28,1"/>
+            <path id="Shape-3" data-name="Shape" class="cls-2" d="M24,5,23,0,19,4l1,5,5,1,4-4Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

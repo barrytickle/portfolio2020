@@ -1,0 +1,55 @@
+.photography-collage{
+  margin-top:30px;
+  @media #{$tablet}{
+    // margin-top:0;
+    width:80%;
+    margin:30px auto;
+  }
+  @media #{$laptop}{
+    width:100%;
+  }
+  .row{
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(center);
+
+    .photo{
+      border-radius:5px;
+      box-shadow: $smallShadow;
+      background-size:cover;
+      overflow: hidden;
+      position: relative;
+    }
+    &:first-child{
+      @include align-items(flex-end);
+      margin-bottom:1.5%;
+      .photo{
+        &:first-child{
+          width:35%;
+          height:150px;
+          margin-right:2%;
+        }
+        &:last-child{
+          width:50%;
+          height:200px;
+        }
+      }
+    }
+    &:last-child{
+      @include align-items(flex-start);
+      .photo{
+        &:first-child{
+          width:40%;
+          height:200px;
+          margin-right:2%;
+        }
+        &:last-child{
+          width:35%;
+          height:150px;
+        }
+      }
+    }
+  }
+
+
+}

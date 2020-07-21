@@ -1,0 +1,17 @@
+.social{
+  height: 50px;
+width: 50px;
+font-size: 20px;
+transition: 0.2s ease-in-out;
+
+&.block{
+  &.light{
+    background:$lightBlue;
+    color:$blue;
+    &:hover{
+      background:$blue;
+      color:$white;
+    }
+  }
+}
+}

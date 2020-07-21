@@ -1,0 +1,41 @@
+.btn{
+  padding:10px 20px;
+  background:$lightBlue;
+  font-weight:$demi;
+  color:$blue;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  display: inline-block;
+  border:0;
+
+  &:hover{
+    background:$blue;
+    color:$white;
+    transform:scale(1.1) translate(-3px);
+    box-shadow: 0px 10px 30px rgba($blue, 0.35);
+  }
+
+  &+.btn{
+    margin-top:20px;
+    @media #{$tablet}{
+      margin-left:20px;
+      margin-top:0;
+    }
+  }
+}
+
+.btn-strong{
+  background:$blue;
+  color:$white;
+}
+
+.btn-white{
+  background:$white;
+  color:$blue;
+  &:hover{
+    background:$lightBlue;
+    color:$blue;
+    box-shadow:0px 10px 30px rgba($white, 0.35);
+  }
+}

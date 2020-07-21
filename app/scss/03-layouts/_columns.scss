@@ -1,0 +1,57 @@
+.columns{
+  @include display(flex);
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+  padding:30px;
+  margin:60px auto;
+
+
+  @media #{$laptop}{
+    @include flex-direction(row);
+  }
+
+  @media #{$desktop}{
+    padding:0;
+  }
+
+  .row{
+    width:100%;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include flex-direction(column);
+
+    @media #{$tablet}{
+      @include flex-direction(row);
+      @include flex-wrap(wrap);
+      width:100%;
+    }
+  }
+
+}
+
+.two-col{
+  .col{
+    width:100%;
+    @media #{$laptop}{
+      width:50%;
+    }
+  }
+
+  h2{
+    margin-left:0;
+    @include align-items(flex-start);
+    span{
+      display:block;
+      margin:0 0 10px 0;
+    }
+  }
+}
+
+.tri-col{
+  .col{
+    width:100%;
+    @media #{$laptop}{
+      width:30%;
+    }
+  }
+}

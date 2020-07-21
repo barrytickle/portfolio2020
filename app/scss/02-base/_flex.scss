@@ -1,0 +1,38 @@
+.flex{
+  @include display(flex);
+
+  .btn{
+    margin-top:30px;
+    @media #{$tablet}{
+      margin-top:0;
+      margin-right:30px;
+    }
+  }
+}
+
+.flex-row{
+  @include flex-direction(column);
+  @media #{$tablet}{
+    @include flex-direction(row);
+  }
+
+}
+.flex-column{
+  @include flex-direction(column);
+}
+
+.flex-align-center{
+  @include align-items(center);
+}
+
+.flex-justify-center{
+  @include justify-content(center);
+}
+
+.flex-justify--space_between{
+  @include justify-content(space-between);
+}
+
+.flex-wrap{
+  @include flex-wrap(wrap);
+}

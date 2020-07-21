@@ -1,0 +1,20 @@
+@mixin container($size){
+
+
+  @if $size == 'large' {
+    width:80%;
+    @media #{$desktop}{
+      max-width:1140px;
+    }
+  } @else {
+    width:70%;
+    @media #{$desktop}{
+      max-width:960px;
+    }
+  }
+  margin:30px auto;
+  width:100%;
+  padding:30px 0;
+
+
+}

@@ -1,0 +1,14 @@
+
+.parallax {
+  margin-top:60px;
+  padding-bottom: 40%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: $bigShadow;
+}
+
+.parallax__image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

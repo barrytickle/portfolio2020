@@ -1,0 +1,9 @@
+[08-Jan-2018 14:58:14 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/Mailchimp.php:165
+Stack trace:
+#0 /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/MailchimpCampaign.php(121): Mailchimp->get()
+#1 /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/MailchimpCampaigns.php(74): MailChimpCampaign->fetch()
+#2 /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/MailchimpAdmin.php(258): MailchimpCampaigns->import(true)
+#3 /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/MailchimpAdmin.php(267): MailchimpAdmin->import()
+#4 /home/awxm3e4iwigq/public_html/blog/wp-includes/class-wp-hook.php(298): MailchimpAdmin->import_ajax('')
+#5 /home/awxm3e4iwigq/public_html/blog/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#6 /home/ in /home/awxm3e4iwigq/public_html/blog/wp-content/plugins/olalaweb-mailchimp-campaign-manager/class/Mailchimp.php on line 165

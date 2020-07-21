@@ -1,0 +1,18 @@
+.contentHeader{
+  padding-bottom:0;
+  margin-bottom:0;
+  h1{
+    color:$blue;
+    text-align: center;
+    width:60%;
+    margin:0 auto;
+  }
+
+  .smallContainer{
+    >*{
+      max-width:100%;
+      width:80%;
+      margin:10px auto;
+    }
+  }
+}

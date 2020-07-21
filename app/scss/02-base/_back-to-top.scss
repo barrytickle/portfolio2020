@@ -1,0 +1,44 @@
+.fab-container {
+  margin: 1em;
+  position: fixed;
+  bottom: -72px; // margin + height
+  right: 0;
+  z-index: 10;
+}
+
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+  &:before {
+    content: attr(tooltip);
+    background: #595959;
+    padding: 4px 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    color: white;
+    font: 400 15px Roboto;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: .3s;
+  }
+  &:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20), 0 3px 8px rgba(0, 0, 0, 0.12);
+    &:before {
+      right: 110%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.top {
+  background: $blue url('/images/icons/Up.svg') center no-repeat;
+}

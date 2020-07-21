@@ -1,0 +1,69 @@
+@import "vars";
+
+*{
+  box-sizing: border-box;
+  font-size:16px;
+  font-family: $primaryFont;
+}
+
+body,html{
+  margin: 0;
+}
+
+.no-move{
+  height:100vh;
+  overflow:hidden;
+}
+
+// body{
+//   background-image: url('/images/background/pattern.png');
+//   background-size:100%;
+//   background-repeat: repeat;
+//   overflow-x:hidden;
+// }
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.largeContainer{display:block;@include container(large);}
+.smallContainer{@include container(small); }
+
+.smallContainer{
+  p{
+    width:80%;
+    margin:20px auto;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+
+}
+
+.mobileHidden{
+  display:none;
+  @media #{$laptop}{
+    display:block;
+  }
+}
+
+.blockHover{
+  position: relative;
+  &:after{content:'';display:block; position: absolute; background:rgba($blue, 0.8); height:100%; width:100%; opacity:0; transition: 0.2s ease-in-out; top:0; left:0;}
+  &:before{content:'';display:block; background-image:url('/images/icons/plus.svg'); height:50px; width:50px; position: absolute; top:50%; background-size:50px 50px; left:50%; z-index:2; transform: translate(-50%, -50%); opacity:0; transition: 0.2s ease-in-out;}
+  &:hover{
+    &:after,
+    &:before{
+      opacity:1;
+    }
+  }
+}

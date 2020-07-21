@@ -1,0 +1,104 @@
+h1{
+  color:$black;
+  font-weight:$medium;
+  margin-bottom:0;
+  font-size:32px;
+  margin-top:0;
+  line-height:135%;
+  @media #{$tablet}{
+    font-size:62px;
+  }
+}
+
+.logo{
+    color:$blue !important;
+    text-decoration: none;
+    color:inherit;
+    font-size:32px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      height: 2px;
+      width: 0;
+      background: $blue;
+      transition: all .2s ease-in-out;
+    }
+    &:hover{
+      &:after{
+        width: 100%;
+      }
+    }
+}
+
+
+
+
+p, ul{
+  line-height:30px;
+  font-weight:$medium;
+  color:$grey;
+  a{
+    color:$blue;
+    font-weight:$demi;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+b{
+  font-weight:$bold;
+  color:$blue;
+}
+
+h2{
+  width:100%;
+  @include display(flex);
+  margin:10px 0;
+  font-weight:$medium;
+  text-align: center;
+  font-size:32px;
+  color:$black;
+
+  &.centered{
+    margin:10px auto;
+    @include align-items(center);
+    @include flex-direction(column);
+  }
+  span{
+    background-color:$lightPurple;
+    color:$purple;
+    display: table;
+    padding:10px 20px;
+    border-radius: 25px;
+    margin:0 auto;
+    font-size:16px;
+    font-weight:$demi;
+  }
+  @media #{$tablet}{
+    max-width:500px;
+  }
+}
+
+.centered{
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+
+  *{
+    text-align: center;
+  }
+
+  &.small-group{
+    width:80%;
+    margin:20px auto;
+  }
+}

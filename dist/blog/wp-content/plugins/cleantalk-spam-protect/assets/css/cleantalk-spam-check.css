@@ -1,0 +1,35 @@
+#ct_checking_status, #ct_cooling_notice, #ct_error_message h3, #ct_error_message h4{
+	text-align: center;
+	width:90%;
+}
+
+#ct_preloader{
+	display:none;
+	width:100%;
+	text-align:center;
+}
+#ct_working_message{
+	display:none;
+	margin:auto;
+	margin-top: 1em;
+	padding:3px;
+	width:70%;
+	border:2px dotted gray;
+	background:#ffff99;
+}
+
+div.pagination{
+	margin: 10px;
+}
+	ul.pagination{
+		display: inline-block;
+		margin: 0;
+	}
+		li.pagination{
+			display: inline-block;
+			margin-left: 10px;
+		}
+		span.current_page{
+			font-size: 1.3em;
+			font-weight: 600;
+		}

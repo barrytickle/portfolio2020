@@ -1,0 +1,42 @@
+.quoteLarge{
+  height:500px;
+  background-image:url('/images/background/header-banner.png');
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  .quote{
+    position: relative;
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    background:$white;
+    font-size:36px;
+    @media #{$tablet}{
+      font-size:42px;
+      width:60%;
+    }
+
+    &:before{
+      content:'';
+      display:block;
+      height:150px;
+      width:150px;
+      background-image: url('/images/icons/left-quote.svg');
+      background-size:150px 150px;
+      position: absolute;
+      top:-50px;
+      left:-50px;
+    }
+  }
+
+  .author{
+    color:$blue;
+    font-size:18px;
+  }
+
+  img{
+    height:30px;
+    width:30px;
+  }
+}

@@ -1,0 +1,19 @@
+.isotope-list{
+  @include display(flex);
+  @include justify-content(center);
+  span{
+    margin-right:10px;
+    display:block;
+    color:$blue;
+    font-size:16px;
+    padding:10px 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover, &.active{
+      transform: scale(1.1) rotate(2deg);
+      background:$blue;
+      color:$white;
+      box-shadow: $smallShadow;
+    }
+  }
+}
