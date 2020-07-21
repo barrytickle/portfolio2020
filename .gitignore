@@ -1,4 +1,4 @@
 .git
 node_modules
 .sass-cache
-/dist/payment
+/dist/payment 
